@@ -1,0 +1,65 @@
+
+
+* {
+  cursor: crosshair;
+}
+* {
+  box-sizing: border-box
+}
+/*background color*/
+html {
+ 
+  background-image: radial-gradient(circle, rgba(239, 12, 96, 1), rgba(141, 102, 166, 1),rgba(44, 178, 234, 1));
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*color of cards*/
+.card {
+  margin: 1rem;
+  background-color: rgba(255, 93, 228, 0.44);
+  box-shadow: 0 0 80px white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+  animation: float 4s ease-in-out infinite;
+      
+}
+h1 {
+  font-size: 100px;
+  color: white;
+     line-height: .80em;
+     font-weight: 400;
+   text-align:center;
+     padding: 18px 0;
+     margin: 100px 0 0 -2px;
+     font-family: "Lucida Console", Monaco, monospace;
+     text-shadow: 0 0 80px rgba(21,171,195,0.7)
+}
+h2 {
+  font-size: 30px;
+     line-height: .80em;
+     font-weight: 400;
+   text-align:center;
+     padding: 18px 0;
+     margin: 100px 0 0 -2px;
+     font-family: "Courier New", Courier, monospace;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(50px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
